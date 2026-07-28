@@ -1,0 +1,122 @@
+// Prisma Schema for ProdIQ AI Product Intelligence Platform (v1.1)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite" // Set to "postgresql" for production deployment
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String                  @id @default(uuid())
+  email       String                  @unique
+  password    String
+  name        String
+  role        String                  @default("USER") // USER, ADMIN
+  createdAt   DateTime                @default(now())
+  updatedAt   DateTime                @updatedAt
+  preference  UserPreference?
+  reports     SavedReport[]
+  wishlist    Wishlist[]
+  histories   RecommendationHistory[]
+}
+
+model UserPreference {
+  id              String   @id @default(uuid())
+  userId          String   @unique
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  profileType     String   @default("DEVELOPER") // DEVELOPER, GAMER, STUDENT, BUDGET
+  maxPrice        Float    @default(150000)
+  primaryPriority String   @default("performance") // performance, battery, display, price
+  minRamGb        Int      @default(16)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Product {
+  id               String        @id @default(uuid())
+  title            String
+  brand            String
+  category         String        // LAPTOP, SMARTPHONE, MONITOR, HEADPHONES
+  price            Float
+  originalPrice    Float
+  rating           Float
+  reviewCount      Int
+  image            String
+  specsJson        String
+  priceHistoryJson String
+  sellerName       String        @default("Official Store")
+  sellerRating     Float         @default(4.8)
+  warrantyMonths   Int           @default(12)
+  deliveryDays     Int           @default(2)
+  offersJson       String        @default("[\"No Cost EMI available\",\"Bank Instant Cashback 10%\"]")
+  reviews          Review[]
+  wishlistedBy     Wishlist[]
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+}
+
+model Review {
+  id        String   @id @default(uuid())
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  author    String
+  rating    Float
+  text      String
+  sentiment String   @default("POSITIVE") // POSITIVE, NEGATIVE, NEUTRAL
+  date      String
+  createdAt DateTime @default(now())
+}
+
+model SavedReport {
+  id         String   @id @default(uuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title      String
+  product1Id String
+  product2Id String
+  notes      String?
+  createdAt  DateTime @default(now())
+}
+
+model Wishlist {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, productId])
+}
+
+model RecommendationHistory {
+  id         String   @id @default(uuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product1Id String
+  product2Id String
+  resultJson String
+  createdAt  DateTime @default(now())
+}
+
+model SellerTrust {
+  id                      String   @id @default(uuid())
+  sellerName              String   @unique
+  rating                  Float    @default(4.8)
+  reviewCount             Int      @default(500)
+  deliveryReliabilityScore Float   @default(95.0) // Percentage
+  priceStabilityScore     Float    @default(92.0) // Percentage
+  returnPolicyDays        Int      @default(14)
+  isVerified              Boolean  @default(true)
+  createdAt               DateTime @default(now())
+}
+
+model AnalyticsEvent {
+  id           String   @id @default(uuid())
+  type         String   // SEARCH, COMPARE, RECOMMENDATION, LOGIN
+  metadataJson String?
+  createdAt    DateTime @default(now())
+}
