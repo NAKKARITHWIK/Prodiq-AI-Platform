@@ -4,7 +4,7 @@ import bcrypt from 'bcryptjs';
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('🌱 Starting ProdIQ Phase 6 Database Seeding...');
+  console.log('🌱 Starting ProdIQ Phase 6 Database Seeding (INR Pricing & Reliable Images)...');
 
   // Create Admin User if not exists
   const hashedPassword = await bcrypt.hash('Admin123!', 10);
@@ -48,11 +48,11 @@ async function main() {
       title: 'ASUS ROG Zephyrus G14 (2024)',
       brand: 'ASUS',
       category: 'LAPTOP',
-      price: 1599.99,
-      originalPrice: 1799.99,
+      price: 154990,
+      originalPrice: 174990,
       rating: 4.8,
       reviewCount: 342,
-      image: 'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=ASUS+ROG+Zephyrus',
       sellerName: 'ASUS Authorized Store',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -63,17 +63,17 @@ async function main() {
         gpu: 'NVIDIA RTX 4060 8GB',
         battery: '73Wh'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 1799.99 }, { month: 'Feb', price: 1799.99 }, { month: 'Mar', price: 1749.99 }, { month: 'Apr', price: 1699.99 }, { month: 'May', price: 1599.99 }, { month: 'Jun', price: 1599.99 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 174990 }, { month: 'Feb', price: 174990 }, { month: 'Mar', price: 164990 }, { month: 'Apr', price: 159990 }, { month: 'May', price: 154990 }, { month: 'Jun', price: 154990 } ]),
     },
     {
       title: 'Apple MacBook Pro 14" M3 Pro',
       brand: 'Apple',
       category: 'LAPTOP',
-      price: 1999.00,
-      originalPrice: 1999.00,
+      price: 199900,
+      originalPrice: 199900,
       rating: 4.9,
       reviewCount: 890,
-      image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=MacBook+Pro+M3',
       sellerName: 'Apple Store Official',
       sellerRating: 5.0,
       specsJson: JSON.stringify({
@@ -84,17 +84,17 @@ async function main() {
         gpu: '14-core Apple GPU',
         battery: '72.4Wh'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 1999.00 }, { month: 'Feb', price: 1999.00 }, { month: 'Mar', price: 1999.00 }, { month: 'Apr', price: 1999.00 }, { month: 'May', price: 1999.00 }, { month: 'Jun', price: 1999.00 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 199900 }, { month: 'Feb', price: 199900 }, { month: 'Mar', price: 199900 }, { month: 'Apr', price: 199900 }, { month: 'May', price: 199900 }, { month: 'Jun', price: 199900 } ]),
     },
     {
       title: 'Dell XPS 15 (2024)',
       brand: 'Dell',
       category: 'LAPTOP',
-      price: 1849.99,
-      originalPrice: 1999.99,
+      price: 184990,
+      originalPrice: 199990,
       rating: 4.6,
       reviewCount: 412,
-      image: 'https://images.unsplash.com/photo-1593642702821-c823b285f222?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Dell+XPS+15',
       sellerName: 'Dell Premier Partner',
       sellerRating: 4.7,
       specsJson: JSON.stringify({
@@ -105,7 +105,7 @@ async function main() {
         gpu: 'NVIDIA RTX 4070 8GB',
         battery: '86Wh'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 1999.99 }, { month: 'Feb', price: 1949.99 }, { month: 'Mar', price: 1899.99 }, { month: 'Apr', price: 1849.99 }, { month: 'May', price: 1849.99 }, { month: 'Jun', price: 1849.99 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 199990 }, { month: 'Feb', price: 194990 }, { month: 'Mar', price: 189990 }, { month: 'Apr', price: 184990 }, { month: 'May', price: 184990 }, { month: 'Jun', price: 184990 } ]),
     },
 
     // ---------------- SMARTPHONES (3) ----------------
@@ -113,11 +113,11 @@ async function main() {
       title: 'Samsung Galaxy S24 Ultra',
       brand: 'Samsung',
       category: 'SMARTPHONE',
-      price: 1299.99,
-      originalPrice: 1299.99,
+      price: 129999,
+      originalPrice: 134999,
       rating: 4.9,
       reviewCount: 1240,
-      image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Galaxy+S24+Ultra',
       sellerName: 'Samsung Direct',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -128,17 +128,17 @@ async function main() {
         gpu: 'Adreno 750',
         battery: '5000mAh'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 1299.99 }, { month: 'Feb', price: 1299.99 }, { month: 'Mar', price: 1299.99 }, { month: 'Apr', price: 1299.99 }, { month: 'May', price: 1249.99 }, { month: 'Jun', price: 1299.99 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 134999 }, { month: 'Feb', price: 134999 }, { month: 'Mar', price: 129999 }, { month: 'Apr', price: 129999 }, { month: 'May', price: 124999 }, { month: 'Jun', price: 129999 } ]),
     },
     {
       title: 'Apple iPhone 15 Pro Max',
       brand: 'Apple',
       category: 'SMARTPHONE',
-      price: 1199.00,
-      originalPrice: 1199.00,
+      price: 159900,
+      originalPrice: 159900,
       rating: 4.8,
       reviewCount: 2150,
-      image: 'https://images.unsplash.com/photo-1695048133142-1a20a5bf616f?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=iPhone+15+Pro+Max',
       sellerName: 'Apple Store Official',
       sellerRating: 5.0,
       specsJson: JSON.stringify({
@@ -149,17 +149,17 @@ async function main() {
         gpu: '6-core Apple GPU',
         battery: '4422mAh'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 1199.00 }, { month: 'Feb', price: 1199.00 }, { month: 'Mar', price: 1199.00 }, { month: 'Apr', price: 1199.00 }, { month: 'May', price: 1199.00 }, { month: 'Jun', price: 1199.00 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 159900 }, { month: 'Feb', price: 159900 }, { month: 'Mar', price: 159900 }, { month: 'Apr', price: 159900 }, { month: 'May', price: 159900 }, { month: 'Jun', price: 159900 } ]),
     },
     {
       title: 'Google Pixel 8 Pro',
       brand: 'Google',
       category: 'SMARTPHONE',
-      price: 899.00,
-      originalPrice: 999.00,
+      price: 98999,
+      originalPrice: 106999,
       rating: 4.7,
       reviewCount: 980,
-      image: 'https://images.unsplash.com/photo-1615822346618-1c4b7528e573?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Pixel+8+Pro',
       sellerName: 'Google Store',
       sellerRating: 4.8,
       specsJson: JSON.stringify({
@@ -170,7 +170,7 @@ async function main() {
         gpu: 'Immortalis-G715s MC10',
         battery: '5050mAh'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 999.00 }, { month: 'Feb', price: 949.00 }, { month: 'Mar', price: 949.00 }, { month: 'Apr', price: 899.00 }, { month: 'May', price: 899.00 }, { month: 'Jun', price: 899.00 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 106999 }, { month: 'Feb', price: 106999 }, { month: 'Mar', price: 98999 }, { month: 'Apr', price: 98999 }, { month: 'May', price: 89999 }, { month: 'Jun', price: 98999 } ]),
     },
 
     // ---------------- MONITORS (2) ----------------
@@ -178,11 +178,11 @@ async function main() {
       title: 'LG 27" UltraGear OLED Gaming Monitor',
       brand: 'LG',
       category: 'MONITOR',
-      price: 899.99,
-      originalPrice: 999.99,
+      price: 75000,
+      originalPrice: 85000,
       rating: 4.8,
       reviewCount: 412,
-      image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=LG+OLED+Monitor',
       sellerName: 'LG Official',
       sellerRating: 4.7,
       specsJson: JSON.stringify({
@@ -193,17 +193,17 @@ async function main() {
         hdr: 'HDR10',
         ports: '2x HDMI 2.1, 1x DisplayPort 1.4'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 999.99 }, { month: 'Feb', price: 999.99 }, { month: 'Mar', price: 949.99 }, { month: 'Apr', price: 949.99 }, { month: 'May', price: 899.99 }, { month: 'Jun', price: 899.99 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 85000 }, { month: 'Feb', price: 85000 }, { month: 'Mar', price: 79990 }, { month: 'Apr', price: 79990 }, { month: 'May', price: 75000 }, { month: 'Jun', price: 75000 } ]),
     },
     {
       title: 'Dell UltraSharp 32" 4K USB-C Hub Monitor',
       brand: 'Dell',
       category: 'MONITOR',
-      price: 799.00,
-      originalPrice: 859.00,
+      price: 65900,
+      originalPrice: 72000,
       rating: 4.7,
       reviewCount: 320,
-      image: 'https://images.unsplash.com/photo-1551645120-d70bfe84c826?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Dell+4K+Monitor',
       sellerName: 'Dell Premier Partner',
       sellerRating: 4.7,
       specsJson: JSON.stringify({
@@ -214,7 +214,7 @@ async function main() {
         hdr: 'VESA DisplayHDR 400',
         ports: '1x HDMI 2.0, 1x DP 1.4, USB-C (90W PD)'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 859.00 }, { month: 'Feb', price: 859.00 }, { month: 'Mar', price: 829.00 }, { month: 'Apr', price: 799.00 }, { month: 'May', price: 799.00 }, { month: 'Jun', price: 799.00 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 72000 }, { month: 'Feb', price: 72000 }, { month: 'Mar', price: 68000 }, { month: 'Apr', price: 65900 }, { month: 'May', price: 65900 }, { month: 'Jun', price: 65900 } ]),
     },
 
     // ---------------- HEADPHONES (3) ----------------
@@ -222,11 +222,11 @@ async function main() {
       title: 'Sony WH-1000XM5 Noise Canceling',
       brand: 'Sony',
       category: 'HEADPHONES',
-      price: 348.00,
-      originalPrice: 398.00,
+      price: 29990,
+      originalPrice: 34990,
       rating: 4.8,
       reviewCount: 3105,
-      image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Sony+WH-1000XM5',
       sellerName: 'Sony Center',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -237,17 +237,17 @@ async function main() {
         connectivity: 'Bluetooth 5.2',
         weight: '250g'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 398.00 }, { month: 'Feb', price: 398.00 }, { month: 'Mar', price: 378.00 }, { month: 'Apr', price: 348.00 }, { month: 'May', price: 348.00 }, { month: 'Jun', price: 348.00 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 34990 }, { month: 'Feb', price: 34990 }, { month: 'Mar', price: 32990 }, { month: 'Apr', price: 29990 }, { month: 'May', price: 29990 }, { month: 'Jun', price: 29990 } ]),
     },
     {
       title: 'Bose QuietComfort Ultra Headphones',
       brand: 'Bose',
       category: 'HEADPHONES',
-      price: 429.00,
-      originalPrice: 429.00,
+      price: 35900,
+      originalPrice: 35900,
       rating: 4.7,
       reviewCount: 890,
-      image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Bose+QC+Ultra',
       sellerName: 'Bose Direct',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -258,17 +258,17 @@ async function main() {
         connectivity: 'Bluetooth 5.3',
         weight: '253g'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 429.00 }, { month: 'Feb', price: 429.00 }, { month: 'Mar', price: 429.00 }, { month: 'Apr', price: 429.00 }, { month: 'May', price: 429.00 }, { month: 'Jun', price: 429.00 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 35900 }, { month: 'Feb', price: 35900 }, { month: 'Mar', price: 35900 }, { month: 'Apr', price: 35900 }, { month: 'May', price: 35900 }, { month: 'Jun', price: 35900 } ]),
     },
     {
       title: 'Sennheiser Momentum 4 Wireless',
       brand: 'Sennheiser',
       category: 'HEADPHONES',
-      price: 299.95,
-      originalPrice: 349.95,
+      price: 24990,
+      originalPrice: 34990,
       rating: 4.6,
       reviewCount: 650,
-      image: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80',
+      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Sennheiser+Momentum+4',
       sellerName: 'Sennheiser Pro',
       sellerRating: 4.8,
       specsJson: JSON.stringify({
@@ -279,7 +279,7 @@ async function main() {
         connectivity: 'Bluetooth 5.2',
         weight: '293g'
       }),
-      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 349.95 }, { month: 'Feb', price: 349.95 }, { month: 'Mar', price: 329.95 }, { month: 'Apr', price: 299.95 }, { month: 'May', price: 299.95 }, { month: 'Jun', price: 299.95 } ]),
+      priceHistoryJson: JSON.stringify([ { month: 'Jan', price: 34990 }, { month: 'Feb', price: 34990 }, { month: 'Mar', price: 29990 }, { month: 'Apr', price: 24990 }, { month: 'May', price: 24990 }, { month: 'Jun', price: 24990 } ]),
     }
   ];
 
@@ -289,6 +289,11 @@ async function main() {
     });
     if (!existing) {
       await prisma.product.create({ data: product });
+    } else {
+      await prisma.product.update({
+        where: { id: existing.id },
+        data: product
+      });
     }
   }
 
