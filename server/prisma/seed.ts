@@ -52,7 +52,7 @@ async function main() {
       originalPrice: 174990,
       rating: 4.8,
       reviewCount: 342,
-      image: 'https://m.media-amazon.com/images/I/71c5W9NxN5L._SX679_.jpg',
+      image: 'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800',
       sellerName: 'ASUS Authorized Store',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -73,7 +73,7 @@ async function main() {
       originalPrice: 199900,
       rating: 4.9,
       reviewCount: 890,
-      image: 'https://m.media-amazon.com/images/I/618d5bS2lUL._SX679_.jpg',
+      image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800',
       sellerName: 'Apple Store Official',
       sellerRating: 5.0,
       specsJson: JSON.stringify({
@@ -94,7 +94,7 @@ async function main() {
       originalPrice: 199990,
       rating: 4.6,
       reviewCount: 412,
-      image: 'https://m.media-amazon.com/images/I/715QeQ1Y1lL._SX679_.jpg',
+      image: 'https://images.unsplash.com/photo-1593642702821-c823b285f222?w=800',
       sellerName: 'Dell Premier Partner',
       sellerRating: 4.7,
       specsJson: JSON.stringify({
@@ -117,7 +117,7 @@ async function main() {
       originalPrice: 134999,
       rating: 4.9,
       reviewCount: 1240,
-      image: 'https://m.media-amazon.com/images/I/71WXxE1G2vL._SX679_.jpg',
+      image: 'https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-5g-sm-s928-1.jpg',
       sellerName: 'Samsung Direct',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -138,7 +138,7 @@ async function main() {
       originalPrice: 159900,
       rating: 4.8,
       reviewCount: 2150,
-      image: 'https://m.media-amazon.com/images/I/81Os1SDWpcL._SX679_.jpg',
+      image: 'https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-max-1.jpg',
       sellerName: 'Apple Store Official',
       sellerRating: 5.0,
       specsJson: JSON.stringify({
@@ -159,7 +159,7 @@ async function main() {
       originalPrice: 106999,
       rating: 4.7,
       reviewCount: 980,
-      image: 'https://m.media-amazon.com/images/I/718yG7UqK0L._SX679_.jpg',
+      image: 'https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-pro-1.jpg',
       sellerName: 'Google Store',
       sellerRating: 4.8,
       specsJson: JSON.stringify({
@@ -182,7 +182,7 @@ async function main() {
       originalPrice: 85000,
       rating: 4.8,
       reviewCount: 412,
-      image: 'https://m.media-amazon.com/images/I/71f-CttjE-L._SX679_.jpg',
+      image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800',
       sellerName: 'LG Official',
       sellerRating: 4.7,
       specsJson: JSON.stringify({
@@ -203,7 +203,7 @@ async function main() {
       originalPrice: 72000,
       rating: 4.7,
       reviewCount: 320,
-      image: 'https://m.media-amazon.com/images/I/81I5%2BYq8VKL._SX679_.jpg',
+      image: 'https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?w=800',
       sellerName: 'Dell Premier Partner',
       sellerRating: 4.7,
       specsJson: JSON.stringify({
@@ -226,7 +226,7 @@ async function main() {
       originalPrice: 34990,
       rating: 4.8,
       reviewCount: 3105,
-      image: 'https://m.media-amazon.com/images/I/51aXvjzcukL._SX679_.jpg',
+      image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800',
       sellerName: 'Sony Center',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -247,7 +247,7 @@ async function main() {
       originalPrice: 35900,
       rating: 4.7,
       reviewCount: 890,
-      image: 'https://m.media-amazon.com/images/I/51b2q7oA-lL._SX679_.jpg',
+      image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800',
       sellerName: 'Bose Direct',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -268,7 +268,7 @@ async function main() {
       originalPrice: 34990,
       rating: 4.6,
       reviewCount: 650,
-      image: 'https://m.media-amazon.com/images/I/61r590h00dL._SX679_.jpg',
+      image: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800',
       sellerName: 'Sennheiser Pro',
       sellerRating: 4.8,
       specsJson: JSON.stringify({
