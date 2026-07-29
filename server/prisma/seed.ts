@@ -4,7 +4,7 @@ import bcrypt from 'bcryptjs';
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('🌱 Starting ProdIQ Phase 6 Database Seeding (INR Pricing & Reliable Images)...');
+  console.log('🌱 Starting ProdIQ Phase 6 Database Seeding (Amazon Product Images)...');
 
   // Create Admin User if not exists
   const hashedPassword = await bcrypt.hash('Admin123!', 10);
@@ -52,7 +52,7 @@ async function main() {
       originalPrice: 174990,
       rating: 4.8,
       reviewCount: 342,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=ASUS+ROG+Zephyrus',
+      image: 'https://m.media-amazon.com/images/I/71c5W9NxN5L._SX679_.jpg',
       sellerName: 'ASUS Authorized Store',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -73,7 +73,7 @@ async function main() {
       originalPrice: 199900,
       rating: 4.9,
       reviewCount: 890,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=MacBook+Pro+M3',
+      image: 'https://m.media-amazon.com/images/I/618d5bS2lUL._SX679_.jpg',
       sellerName: 'Apple Store Official',
       sellerRating: 5.0,
       specsJson: JSON.stringify({
@@ -94,7 +94,7 @@ async function main() {
       originalPrice: 199990,
       rating: 4.6,
       reviewCount: 412,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Dell+XPS+15',
+      image: 'https://m.media-amazon.com/images/I/715QeQ1Y1lL._SX679_.jpg',
       sellerName: 'Dell Premier Partner',
       sellerRating: 4.7,
       specsJson: JSON.stringify({
@@ -117,7 +117,7 @@ async function main() {
       originalPrice: 134999,
       rating: 4.9,
       reviewCount: 1240,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Galaxy+S24+Ultra',
+      image: 'https://m.media-amazon.com/images/I/71WXxE1G2vL._SX679_.jpg',
       sellerName: 'Samsung Direct',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -138,7 +138,7 @@ async function main() {
       originalPrice: 159900,
       rating: 4.8,
       reviewCount: 2150,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=iPhone+15+Pro+Max',
+      image: 'https://m.media-amazon.com/images/I/81Os1SDWpcL._SX679_.jpg',
       sellerName: 'Apple Store Official',
       sellerRating: 5.0,
       specsJson: JSON.stringify({
@@ -159,7 +159,7 @@ async function main() {
       originalPrice: 106999,
       rating: 4.7,
       reviewCount: 980,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Pixel+8+Pro',
+      image: 'https://m.media-amazon.com/images/I/718yG7UqK0L._SX679_.jpg',
       sellerName: 'Google Store',
       sellerRating: 4.8,
       specsJson: JSON.stringify({
@@ -182,7 +182,7 @@ async function main() {
       originalPrice: 85000,
       rating: 4.8,
       reviewCount: 412,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=LG+OLED+Monitor',
+      image: 'https://m.media-amazon.com/images/I/71f-CttjE-L._SX679_.jpg',
       sellerName: 'LG Official',
       sellerRating: 4.7,
       specsJson: JSON.stringify({
@@ -203,7 +203,7 @@ async function main() {
       originalPrice: 72000,
       rating: 4.7,
       reviewCount: 320,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Dell+4K+Monitor',
+      image: 'https://m.media-amazon.com/images/I/81I5%2BYq8VKL._SX679_.jpg',
       sellerName: 'Dell Premier Partner',
       sellerRating: 4.7,
       specsJson: JSON.stringify({
@@ -226,7 +226,7 @@ async function main() {
       originalPrice: 34990,
       rating: 4.8,
       reviewCount: 3105,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Sony+WH-1000XM5',
+      image: 'https://m.media-amazon.com/images/I/51aXvjzcukL._SX679_.jpg',
       sellerName: 'Sony Center',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -247,7 +247,7 @@ async function main() {
       originalPrice: 35900,
       rating: 4.7,
       reviewCount: 890,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Bose+QC+Ultra',
+      image: 'https://m.media-amazon.com/images/I/51b2q7oA-lL._SX679_.jpg',
       sellerName: 'Bose Direct',
       sellerRating: 4.9,
       specsJson: JSON.stringify({
@@ -268,7 +268,7 @@ async function main() {
       originalPrice: 34990,
       rating: 4.6,
       reviewCount: 650,
-      image: 'https://placehold.co/800x600/0f172a/818cf8?text=Sennheiser+Momentum+4',
+      image: 'https://m.media-amazon.com/images/I/61r590h00dL._SX679_.jpg',
       sellerName: 'Sennheiser Pro',
       sellerRating: 4.8,
       specsJson: JSON.stringify({
